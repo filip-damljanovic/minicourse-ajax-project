@@ -57,9 +57,9 @@ function loadData() {
     success: function(data) {
 
       for(var i = 0; i < data[1].length; i++) {
-          var article_url = data[3];
-          var titles = data[1];
-          $wikiElem.append('<li><a href=' + article_url[i] +'>' + titles[i] + '</a></li>');
+        var article_url = data[3];
+        var titles = data[1];
+        $wikiElem.append('<li><a href=' + article_url[i] +'>' + titles[i] + '</a></li>');
       }
 
       clearTimeout(wikiRequestTimeout);
